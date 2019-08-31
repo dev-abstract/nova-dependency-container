@@ -73,7 +73,7 @@ class NovaDependencyContainer extends Field
             if (array_key_exists('notEmpty', $dependency) && !empty($resource->{$dependency['field']})) {
                 $this->meta['dependencies'][$index]['satisfied'] = true;
             }
-var_dump($dependency);exit;
+
             if (array_key_exists('value', $dependency) &&
                 (
                     $dependency['value'] == $resource->{$dependency['field']} ||
